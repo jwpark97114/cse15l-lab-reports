@@ -35,7 +35,7 @@ Now you are in the cs15lwi23 remote directory.
 
 In this directory you can run commands as if you are working with your local terminal. I tried to see if I'm allowed to modify cs15lwi23.
 
-So, I tried following codes.
+So, I tried following lines.
 
 > * pwd
 > * cd ..
