@@ -8,24 +8,24 @@ To install Visual Studio Code, getting to the VS Code webpage and downloading in
 
 >[VS Code Front Page](https://code.visualstudio.com/)
 
-*If you scroll down on that page you will find the following downloadable files.
+* If you scroll down on that page you will find the following downloadable files.
 
 ![1](https://user-images.githubusercontent.com/66867608/212767940-9e67640f-567e-46cf-bdce-c50a3daddaff.png)
 
-*Take close attention to which file you chooes to download as you want to download compatible file to your OS. For me it was Mac10.11+.zip 
+* Take close attention to which file you chooes to download as you want to download compatible file to your OS. For me it was Mac10.11+.zip 
 
 
 **Getting Connected to CSE15L Labs**
 
 Getting Connected requires you to open a terminal in VS Code after successfully installing VS Code.
 
-*Then from the VS Code's upper toolbar search Terminal, click open new terminal and make sure it's on bash not zsh.
+* Then from the VS Code's upper toolbar search Terminal, click open new terminal and make sure it's on bash not zsh.
 
-*On that terminal you input 
+* On that terminal you input 
 
 >ssh cs15lwi23___@ieng6.ucsd.edu (___ must be the last 3 digits of your CSE15L ID)
 
-*If successful you would get the following output from the terminal
+* If successful you would get the following output from the terminal
 
 ![2](https://user-images.githubusercontent.com/66867608/212768927-752f63e9-575e-4a31-9f0b-81c79e87b839.png)
 
@@ -37,10 +37,10 @@ In this directory you can run commands as if you are working with your local ter
 
 So, I tried following codes.
 
-> *pwd
-> *cd ..
-> *ls
-> *mkdir
+> * pwd
+> * cd ..
+> * ls
+> * mkdir
 
 pwd was used to know my current directory, then I used cd .. to get to cs15lwi23, find out what we had at that time then tried to create a new directory.
 
