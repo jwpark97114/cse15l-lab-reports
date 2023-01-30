@@ -23,7 +23,7 @@ Getting Connected requires you to open a terminal in VS Code after successfully 
 
 * On that terminal you input 
 
-> -ls ssh cs15lwi23___@ieng6.ucsd.edu (___ must be the last 3 digits of your CSE15L ID)
+> 'ssh cs15lwi23___@ieng6.ucsd.edu' (___ must be the last 3 digits of your CSE15L ID)
 
 * If successful you would get the following output from the terminal
 
