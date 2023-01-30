@@ -23,7 +23,7 @@ Getting Connected requires you to open a terminal in VS Code after successfully 
 
 * On that terminal you input 
 
-> 'ssh cs15lwi23___@ieng6.ucsd.edu' (___ must be the last 3 digits of your CSE15L ID)
+> `ssh cs15lwi23___@ieng6.ucsd.edu` (___ must be the last 3 digits of your CSE15L ID)
 
 * If successful you would get the following output from the terminal
 
@@ -37,10 +37,10 @@ In this directory you can run commands as if you are working with your local ter
 
 So, I tried following lines.
 
-> * pwd
-> * cd ..
-> * ls
-> * mkdir
+> * `pwd`
+> * `cd ..`
+> * `ls`
+> * `mkdir`
 
 pwd was used to know my current directory, then I used cd .. to get to cs15lwi23, find out what we had at that time then tried to create a new directory.
 
