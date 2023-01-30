@@ -50,5 +50,5 @@ I was able to know that all the last three digits of the accounts of CS15L start
 
 It was interesting how I was able to know all the addresses of the students while I have no permission to do anything with it. 
 
-Would it be possible to not show things that I don't have access to?
+Would it be possible to not show things that I don't have access to from the server side?
 
