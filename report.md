@@ -42,7 +42,7 @@ So, I tried following lines.
 > * `ls`
 > * `mkdir`
 
-pwd was used to know my current directory, then I used cd .. to get to cs15lwi23, find out what we had at that time then tried to create a new directory.
+`pwd` was used to know my current directory, then I used cd .. to get to cs15lwi23, find out what we had at that time then tried to create a new directory.
 
 <img width="1585" alt="abc" src="https://user-images.githubusercontent.com/66867608/212769612-615cae15-f0dc-4943-85a0-e14a14ab20e8.png">
 
@@ -50,5 +50,5 @@ I was able to know that all the last three digits of the accounts of CS15L start
 
 It was interesting how I was able to know all the addresses of the students while I have no permission to do anything with it. 
 
-Wouldn't it be possible to not show things that I have access to?
+Wouldn't it be possible to not show things that I don't have access to?
 
