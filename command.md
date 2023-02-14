@@ -1,4 +1,4 @@
-# Command : Grep Report
+# **Command : Grep Report**
 
 As I could not copy from my terminal for reasons I do not understand, I took screenshots for the outputs.
 
