@@ -11,6 +11,7 @@ All the commands are found at
   Examples:
   
 > input `grep -r Lucayans .`
+> 
 > output :
 > ![1](https://user-images.githubusercontent.com/66867608/218648126-82006f63-e6ce-4609-8b52-b0866d8bed89.png)
 
