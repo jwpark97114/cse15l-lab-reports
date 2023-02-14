@@ -4,9 +4,10 @@
 **Recursive search : -r**
 
   When we want to search all the files within the target directory, we can use recursive option.
+  
   Command : `grep -r "String" Target-Directory`
-  Source: 
-  > https://recipes4dev.tistory.com/157
+  
+  Source: https://recipes4dev.tistory.com/157
   
   Examples:
   
@@ -24,9 +25,10 @@
 **Print line numbers : -n**
 
   If you need at which line the target string is, you can use `-n` command.
+  
   Command : `grep -n "String" Target-Directory/File.Extension`
-  Source: 
-  > https://recipes4dev.tistory.com/157
+  
+  Source : https://recipes4dev.tistory.com/157
   
   Examples:
    
@@ -44,9 +46,10 @@
 **Find patterns with numbers within certain range : [0-100]**
 
   If you want to find a pattern with numbers at the end, like "page 160" in our data files, you can use the following commands.
+  
   Command : `grep 'String [0-100]' Target-Directory/File.Extension`
-  Source: 
-  > https://recipes4dev.tistory.com/157
+  
+  Source : https://recipes4dev.tistory.com/157
   
 > First input : `grep 'page [0-100]' written_2/travel_guides/berlitz2/Berlin-WhatToDo.txt`
 > 
@@ -62,9 +65,10 @@
 **Find string at the start of lines : ^**
 
   If you want to check strings at the start of lines, use
+  
   Command : `grep "^String" Target-Directory/File.Extension`
-  Source: 
-  > https://recipes4dev.tistory.com/157
+  
+  Source : https://recipes4dev.tistory.com/157
   
 > First input : `grep "^Ho" written_2/travel_guides/berlitz2/Nepal-WhatToDo.txt`
 > 
