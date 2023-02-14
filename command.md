@@ -23,7 +23,7 @@ As I could not copy from my terminal for reasons I do not understand, I took scr
 > <img width="1486" alt="스크린샷 2023-02-13 오후 8 53 36" src="https://user-images.githubusercontent.com/66867608/218648769-e988d366-03ed-46d8-a516-7ba110e3639d.png">
 
 
-**Print line numbers : -n**
+# Print line numbers : -n
 
   If you need at which line the target string is, you can use `-n` command.
   
@@ -44,7 +44,7 @@ As I could not copy from my terminal for reasons I do not understand, I took scr
 > <img width="1486" alt="스크린샷 2023-02-13 오후 8 54 55" src="https://user-images.githubusercontent.com/66867608/218649390-e9e38065-d9b9-4d5f-b712-48b18500b112.png">
 
 
-**Find patterns with numbers within certain range : [0-100]**
+# Find patterns with numbers within certain range : [0-100]
 
 *  If you want to find a pattern with numbers at the end, like "page 160" in our data files, you can use the following commands.
   
@@ -63,7 +63,7 @@ As I could not copy from my terminal for reasons I do not understand, I took scr
 > ![6-2](https://user-images.githubusercontent.com/66867608/218651172-a97e3e81-e6e0-4980-8964-e2bb3354f597.png)
 
 
-**Find string at the start of lines : ^**
+# Find string at the start of lines : ^
 
 *  If you want to check strings at the start of lines, use
   
