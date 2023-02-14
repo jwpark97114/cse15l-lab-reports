@@ -2,7 +2,7 @@
 
 As I could not copy from my terminal for reasons I do not understand, I took screenshots for the outputs.
 
-**Recursive search : -r**
+# Recursive search : -r
 
   When we want to search all the files within the target directory, we can use recursive option.
   
