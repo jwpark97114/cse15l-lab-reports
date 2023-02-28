@@ -29,7 +29,7 @@ Just like the clone command it was right there for me as I have prepared.
   Keys pressed for compilation: `<up>,<up>,<up>,<up>,<up>,<enter>`
   Keys pressed for running: `<Ctrl>+R, java , <enter>`
  
- The using the reverse ordered history started to get complicated because I have not considered the fact that the newly typed ones are added to the log, so instead of `<up>` three times, I had to type `<up>` five times. After this point I gave up on using `<up>` as the commands were piling up pushing commands from previous practices so far behind. So I used `<Ctrl> + r` to find java. But the problem was that it only gave me `javac` not `java` so I had to re-type it and found that I should type `java<space>` to find java command.
+ The using the reverse ordered history started to get complicated because I have not considered the fact that the newly typed ones are added to the log, so instead of `<up>` three times, I had to type `<up>` five times. After this point I gave up on using `<up>` as the commands were piling up pushing commands from previous practices so far behind. So I used `<Ctrl> + r` to find `java`. But the problem was that it only gave me `javac` not `java` so I had to re-type it and found that I should type `java<space>` to find `java` command.
  
 * Fourth step: Editing the file
 
@@ -37,7 +37,7 @@ Just like the clone command it was right there for me as I have prepared.
 
   Keys pressed for opening the file: `vim L, <Tab>, ., <Tab>, <enter>`
   
-As I have used `vim` command on other files to practice, I was not given command for the right files. So I had to manually type it instead of using `<Ctrl>+R`
+As I have used `vim` command on other files to practice, I was worried using `<Ctrl>+r` might not work properly. So I manually typed it instead of using `<Ctrl>+R`
   
 <img width="960" alt="스크린샷 2023-02-27 오후 9 50 28" src="https://user-images.githubusercontent.com/66867608/221768798-adb56379-7910-4fc5-a2b0-8dfa377472d1.png">
 
