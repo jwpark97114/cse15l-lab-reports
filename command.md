@@ -1,7 +1,7 @@
 # **Command : Find Report**
 
 
-# Pattern search : *
+# Pattern search :  `*`
 
   When it come to searching for files that start with certain strings, we can use `*` to find anything that matches the pattern.
   
