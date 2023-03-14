@@ -1,85 +1,85 @@
-# **Command : Grep Report**
+# **Command : Find Report**
 
-As I could not copy from my terminal for reasons I do not understand, I took screenshots for the outputs.
 
-# Recursive search : -r
+# Pattern search : *
 
-  When we want to search all the files within the target directory, we can use recursive option.
+  When it come to searching for files that start with certain strings, we can use `*` to find anything that matches the pattern.
   
- * Command : `grep -r "String" Target-Directory`
+ * Command : `find Target-Directory "String*"`
   
- * Source: https://recipes4dev.tistory.com/157
+ * Source: https://recipes4dev.tistory.com/156
   
  * Examples:
   
-> First input : `grep -r Lucayans .`
+> First input : `find . -name "Bahama*"`
 > 
 > Output :
-> ![1](https://user-images.githubusercontent.com/66867608/218648126-82006f63-e6ce-4609-8b52-b0866d8bed89.png)
+> <img width="581" alt="스크린샷 2023-03-13 오후 7 11 37" src="https://user-images.githubusercontent.com/66867608/224874884-0cb7dce2-fe1e-4678-a4a5-55528a88e0e1.png">
 > 
-> Second input : `grep -r Horseshoe .`
 > 
-> Output : 
-> <img width="1486" alt="스크린샷 2023-02-13 오후 8 53 36" src="https://user-images.githubusercontent.com/66867608/218648769-e988d366-03ed-46d8-a516-7ba110e3639d.png">
+> Second input : `find . -name "Athe*"`
+> 
+> Output : <img width="581" alt="스크린샷 2023-03-13 오후 7 13 00" src="https://user-images.githubusercontent.com/66867608/224875033-b200045d-931c-494a-a54d-ae4b1b834169.png"> 
 
 
-# Print line numbers : -n
+# Delete the found files :  `-delete`
 
-  If you need at which line the target string is, you can use `-n` command.
+  Surprisingly I have realized that the find command can directly used to delete the files found with the command using `-delete` at the end of the command. It can be used with `*` to delete all the files that matches the pattern, which seems to be a really convenient feature.
   
-*  Command : `grep -n "String" Target-Directory/File.Extension`
+*  Command : `find Target-Directory "String" -delete`
   
-*  Source : https://recipes4dev.tistory.com/157
+*  Source: https://recipes4dev.tistory.com/156
   
 *  Examples:
    
-> First input : `grep -rn Lucayans .`
+> First input : `find . "Athens-W*" -delete`
 > 
 > Output :
-> ![3](https://user-images.githubusercontent.com/66867608/218649337-655a4d21-eb92-4d49-9aa1-9cb21979238e.png)
+> <img width="581" alt="스크린샷 2023-03-13 오후 7 17 58" src="https://user-images.githubusercontent.com/66867608/224875745-2f64144c-f821-462f-9bdb-5e5e7ce06c7b.png">
 > 
-> Second input : `grep -rn Horseshoe .`
+> Second input : `find . "Athens*" -delete`
 > 
 > Output : 
-> <img width="1486" alt="스크린샷 2023-02-13 오후 8 54 55" src="https://user-images.githubusercontent.com/66867608/218649390-e9e38065-d9b9-4d5f-b712-48b18500b112.png">
+> <img width="581" alt="스크린샷 2023-03-13 오후 7 19 17" src="https://user-images.githubusercontent.com/66867608/224875906-2d95e3e5-bee2-40f8-b604-874dab59eb41.png">
 
 
-# Find patterns with numbers within certain range : [0-100]
 
-*  If you want to find a pattern with numbers at the end, like "page 160" in our data files, you can use the following commands.
+# Find directory or file only : `-type`
+
+*  When you have to differenciate file and directory you can use `-type d` and `-type f` to find directories and files respectively.
   
-*  Command : `grep 'String [0-100]' Target-Directory/File.Extension`
+*  Command : `find Target-Directory "String" -type [d or f]`
   
-*  Source : https://recipes4dev.tistory.com/157
+*  Source: https://recipes4dev.tistory.com/156
   
-> First input : `grep 'page [0-100]' written_2/travel_guides/berlitz2/Berlin-WhatToDo.txt`
+> First input : `find . -name "Baha*" -type f`
 > 
 > Output :
-> ![5](https://user-images.githubusercontent.com/66867608/218650157-62822872-9db8-484c-b15f-a66866174995.png)
+> <img width="581" alt="스크린샷 2023-03-13 오후 7 35 28" src="https://user-images.githubusercontent.com/66867608/224878187-cd419205-eb90-4ec0-b989-48ac27d02829.png">
 > 
-> Second input : `grep 'page [0-150]' written_2/travel_guides/berlitz2/Nepal-WhatToDo.txt`
+> Second input : `find . -name "Baha*" -type d`
 > 
 > Output : 
-> ![6-2](https://user-images.githubusercontent.com/66867608/218651172-a97e3e81-e6e0-4980-8964-e2bb3354f597.png)
+> <img width="581" alt="스크린샷 2023-03-13 오후 7 37 02" src="https://user-images.githubusercontent.com/66867608/224878413-23741236-3b46-45da-bfc7-92d4dc875071.png">
 
 
-# Find string at the start of lines : ^
+# Find empty directory or file that has zero size : `-empty`
 
-*  If you want to check strings at the start of lines, use
+*  If you want to find directories or files that have nothing inside whether because it is not supposed to be empty or it has to be empty, you can use this command to detect them.
   
-*  Command : `grep "^String" Target-Directory/File.Extension`
+*  Command : `find Target-Directory -empty`
   
-*  Source : https://recipes4dev.tistory.com/157
+*  Source: https://recipes4dev.tistory.com/156
   
-> First input : `grep "^Ho" written_2/travel_guides/berlitz2/Nepal-WhatToDo.txt`
+> First input : `find . -empty -type f`
 > 
 > Output :
-> ![7](https://user-images.githubusercontent.com/66867608/218652812-63d4692b-9e1b-4fc3-8433-9d9b352cde2f.png)
-
+> <img width="581" alt="스크린샷 2023-03-13 오후 7 45 54" src="https://user-images.githubusercontent.com/66867608/224879827-b53f0a60-f3b9-4a18-8f9d-54b37ebf0a3b.png">
 > 
-> Second input : `grep "^What" written_2/travel_guides/berlitz2/Nepal-WhatToDo.txt`
+> Second input : `find . -empty -type d`
 > 
 > Output :
-> ![8](https://user-images.githubusercontent.com/66867608/218652831-3e539eea-b06d-40ba-9066-1dd2da38d920.png)
+> <img width="581" alt="스크린샷 2023-03-13 오후 7 46 34" src="https://user-images.githubusercontent.com/66867608/224879936-46be5312-7220-4bb6-870f-7c3041b647f5.png">
+
  
 
